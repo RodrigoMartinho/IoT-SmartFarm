@@ -1,0 +1,126 @@
+# ==========================================
+# GitIgnore - Plataforma SmartFarm IoT
+# ==========================================
+
+# ------------------------------------------
+# 1. Ambientes Virtuais e Python (Backend)
+# ------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.venv*/
+backend/venv/
+backend/env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testes e Cobertura (Pytest / Coverage)
+.pytest_cache/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# ------------------------------------------
+# 2. Node.js e Frontend (React / Vite)
+# ------------------------------------------
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Build de produção do frontend
+dist/
+frontend/dist/
+dist-ssr/
+frontend/dist-ssr/
+*.local
+
+# ------------------------------------------
+# 3. Variáveis de Ambiente e Credenciais
+# ------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ------------------------------------------
+# 4. Embarcados e Arduino / ESP32-C6
+# ------------------------------------------
+*.hex
+*.bin
+*.elf
+*.eep
+*.lst
+*.map
+Arduino/**/build/
+.arduino*
+*secrets.h
+
+# ------------------------------------------
+# 5. Bancos de Dados e Dados Locais
+# ------------------------------------------
+*.sqlite3
+*.db
+*.sqlite
+postgres_data/
+mongo_data/
+docker/data/
+
+# ------------------------------------------
+# 6. Logs do Sistema e Temporários
+# ------------------------------------------
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------------------------
+# 7. Editores e IDEs
+# ------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# ------------------------------------------
+# 8. Arquivos do Sistema Operacional
+# ------------------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
